@@ -1,0 +1,86 @@
+.slick-three-wrapper{
+    position: relative;
+    .slider-three-wrapper{
+        position: relative;
+        width: 176px;
+        height: 350px;
+        img{
+            width: 176px;
+            height: 264px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+       
+        .vote_average {
+            color: red;
+            padding: 5px 10px;
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .watch_movie{
+            transform: scale(0);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+         h3 {
+             font-style: normal;
+             font-weight: 600;
+             font-size: 14px;
+             line-height: 18px;
+             color: #FFFFFF;
+             padding-top: 16px;
+         }
+
+         span {
+             font-style: normal;
+             font-weight: 600;
+             font-size: 12px;
+             line-height: 16px;
+             color: #D3465B;
+             display: block;
+             padding-top: 6px;
+         }
+
+         
+         
+    }
+    .remove-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D3465B;
+        border-radius: 3px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        border: none;
+
+        img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+    }
+    
+}

@@ -1,0 +1,29 @@
+.my_movies{
+   .container{
+        .page_title {
+            margin-top: 120px;
+
+            .page-names {
+                color: #fff;
+                font-weight: 600;
+                font-style: normal;
+                line-height: 24px;
+                font-size: 24px;
+            }
+        }
+
+        .flex-blocks {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+   }
+
+   footer {
+       background-color: #13121a;
+       padding: 24px 0;
+       box-sizing: border-box;
+   }
+}

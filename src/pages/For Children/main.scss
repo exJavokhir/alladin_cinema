@@ -1,0 +1,29 @@
+.child-wrapper{
+    .container{
+        .error-page{
+            width: 100%;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            justify-content: left;
+            align-items: center;
+            display: flex;
+
+            .error-block{
+                text-align: center;
+                .error-title-one{
+                    font-family: 'Itim';
+                    font-size: 54px;
+                    font-weight: 900;
+                    color: #fff;
+                }
+
+                .error-title-two{
+                    color: #fff;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

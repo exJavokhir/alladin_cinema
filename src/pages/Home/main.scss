@@ -1,0 +1,279 @@
+.contents{
+    height: 100%;
+    background-color: #16151D;
+    .modal {
+        width: 100%;
+        height: 100%;
+        background: #16151dce;
+        backdrop-filter: blur(5px);
+        position: fixed;
+        z-index: 10;
+        transition: 0.3s;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        &.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 34px;
+            right: 34px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+                opacity: 0.38;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+    .slick-one {
+        position: relative;
+        
+        .slick-slider{
+        position: relative !important;
+        .slick-arrow{
+           display: none;
+        }
+    }
+    }
+    .fuckkkkina{
+        
+        .slide-wrapper{
+            &::before {
+                background-color: #16151d93;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                content: '';
+                z-index: 1;
+            }
+            width: 100vw;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .container{
+                &.fuck-slider{
+                    position: relative;
+                    left: 100px;
+                    margin-top: 200px;
+                    z-index: 2;
+                }
+                .buttons{
+                    display: flex;
+                    align-items: center;
+                    .new-btn{
+                        display: inline-block;
+                        padding: 6px 12px;
+                        background: #F4415F;
+                        border-radius: 4px;
+                        border: none;
+                        outline: none;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #FFFFFF;
+                        margin-right: 14px;
+                        z-index: 10;
+                    }
+                    .full-btn{
+                        display: inline-block;
+                        padding: 6px 12px;
+                        background: #fff;
+                        border-radius: 4px;
+                        border: none;
+                        outline: none;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #2C2C2E;
+                        z-index: 10;
+                    }
+                }
+                .movie-title{
+                    padding: 16px 0;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 58px;
+                    color: #FFFFFF;
+                }
+                .movie-info{
+                    display: flex;
+                    align-items: center;
+                    .block-one{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 24px;
+                        .movie-date, .movie-adults{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 15px;
+                            z-index: 10;
+                            color: #FFFFFF;
+                        }
+                        .movie-adults{
+                            display: block;
+                            padding-left: 3px;
+                        }
+                    }
+                    .block-two{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 24px;
+                        .img-one{
+                            display: block;
+                            padding-right: 8px;
+                            z-index: 10;
+                        }
+                        .movie-vote{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #FFFFFF;
+                            z-index: 10;
+                        }
+                    }
+                    .block-three{
+                        display: flex;
+                        align-items: center;
+                        .img-two{
+                            display: block;
+                            padding-right: 8px;
+                            z-index: 10;
+                        }
+                        .movie-count{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #FFFFFF;
+                            z-index: 10;
+                        }
+                    }
+
+                    
+                }
+                .block-foue {
+                    max-width: 500px;
+                    margin-top: 20px;
+                    .movie-desc {
+                        color: #fff;
+                        font-weight: 600;
+                        font-style: normal;
+                        font-size: 15px;
+                        line-height: 20px;
+                        z-index: 10;
+                    }
+                }
+            }
+
+            .bla-bla{
+                background: linear-gradient(180deg, rgba(22, 21, 29, 0) 0%, rgba(22, 21, 29, 0.8) 48.31%, #16151D 100%);
+                margin-top: 150px;
+                z-index: 10;
+                .slick-two{
+                    width: 80%;
+                    .slick-arrow{
+                        &.slick-prev{
+                            left: 50rem !important;
+                        }
+                    }
+                    
+                    .slick-two-wrapper{
+                        display: flex;
+                        justify-content: space-between;
+                        .slider-two-wrapper{
+                            img{
+                                width: 276px;
+                                height: 168px;
+                                object-fit: cover;
+                                border-radius: 4px;
+                            }
+                            h1{
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #FFFFFF;
+                                padding: 16px 0 ;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .slick-four{
+        margin-top: 50px;
+        
+    }
+    .slick-five{
+        margin-top: 50px;
+    }
+
+    .footer{
+        margin-top: 80px;
+        padding: 24px 0;
+        background-color: #13121A;
+    }
+}
+
+.title-movie{
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.slick-three, .slick-four, .slick-five{
+    position: relative;
+    .slick-arrow{
+            position: absolute !important;
+            top: -30px !important;
+            &.slick-next{
+                right: 25px !important;
+                &:before{
+                    border-radius: 50%;
+                    color: #16151D;
+                    padding: 5px;
+                    background-color: #D3465B;
+                }
+            }
+            &.slick-prev{
+                position: absolute !important;
+                left: 64rem !important;
+                &:before{
+                    border-radius: 50%;
+                    color: #16151D;
+                    padding: 5px;
+                    background-color: #D3465B;
+                }
+            }
+        }   
+}

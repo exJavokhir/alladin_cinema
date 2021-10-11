@@ -1,0 +1,428 @@
+.body-wrapper{
+    background-color: #16151D;
+}
+
+.single-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+
+    .modal{
+        width: 100%;
+        height: 100%;
+        background: #16151dce;
+        backdrop-filter: blur(5px);
+        position: fixed;
+        z-index: 10;
+        transition: 0.3s;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        &.active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .close-btn{
+            position: absolute;
+            top: 34px;
+            right: 34px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            img{
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+                opacity: 0.38;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+    
+    
+    .movieInfo-data{
+        margin-top: 250px;
+        .fuck-slider{
+            .buttons{
+                display: flex;
+                align-items: center;
+                .new-btn{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #FFFFFF;
+                    padding: 7px 12px;
+                    background-color: #F4415F;
+                    outline: none;
+                    border: none;
+                    border-radius: 4px;
+                    margin-right: 14px;
+                }
+
+                .full-btn{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    background-color: #FFFFFF;
+                    padding: 7px 12px;
+                    color: #000;
+                    outline: none;
+                    border: none;
+                    border-radius: 4px;
+                }
+            }
+
+            .movie-title{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 58px;
+                color: #FFFFFF;
+                padding: 16px 0;
+            }
+
+            .movie-info{
+                display: flex;
+                align-items: center;
+                .block-one{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 24px;
+                    span{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #FFFFFF;
+                    }
+                }
+                .block-two{
+                    margin-right: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        margin-right: 14px;
+                    }
+                    span{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                    }
+                }
+                .block-three{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        margin-right: 14px;
+                    }
+                    span{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .subs-view{
+                display: flex;
+                align-items: center;
+                padding: 24px 0 109px 0;
+
+                button{
+                    padding: 15px 24px;
+                    display: block;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    &.subs-btn{
+                        margin-right: 24px;
+                        background: #5931AC;
+                        border: none;
+                        outline: none;
+                        border-radius: 4px;
+                        border: 2px solid transparent;
+                        transition: 0.3s;
+                        &:hover{
+                            border: 2px solid #5931AC;
+                            background-color: transparent;
+                        }
+                    }
+
+                    &.fav-btn{
+                        background: rgba(60, 60, 67, 0.6);
+                        border-radius: 4px;
+                        border: none;
+                        outline: none;
+                        position: relative;
+                        width: 60px;
+                        height: 51px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px solid transparent;
+                        transition: 0.3s;
+                        &:hover{
+                            border: 2px solid #5931AC;
+                            background-color: transparent;
+                        }
+                        img{
+                            position: absolute;
+                            &.like-two{
+                                display: block;
+                                &.active{
+                                    display: none;
+                                }
+                            }
+                            &.like-one {
+                                display: none;
+                                &.active {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .movie-data-info{
+        .info-data{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: #D1D1D6;
+            padding: 12px 0;
+        }
+
+        .info-data-child{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            display: inline-block;
+            &.one{
+                padding-left: 64px;
+            }
+
+            &.two{
+                padding-left: 43px;
+            }
+
+            &.three{
+                display: inline-block;
+                padding: 0 5px;
+            }
+        }
+
+        .tagline{
+            padding: 0 0 12px 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+
+        .what-the-fuck{
+            display: flex;
+            align-items: center;
+            .info-data{
+                padding-right: 46px;
+            }
+        }
+    }
+
+    .more-info{
+        display: flex;
+        justify-content:center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding: 116px 0 0 0;
+    }
+}
+
+main{
+    margin-top: 100px;
+    .main-section{
+        .section-wrapper{
+            margin-bottom: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                width: 52%;
+                position: relative;
+            }
+            .right{
+                width: 45%;
+            }
+            img{
+                height: 268px;
+                width: 476px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            p{
+                max-width: 576px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgb(126, 126, 126);
+            }
+            h2{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 34px;
+                color: #FFFFFF;
+                padding-bottom: 24px;
+            }
+
+             
+        }
+
+        .movie_actors{
+            margin-top: 20px;
+            width: 100%;
+            position: relative;
+            .actor-info{
+                .actors-title{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 34px;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                    margin-bottom: 10px;
+                }
+                .actors{
+                    padding: 0 5px;
+                    width: 100px;
+                    height: 100px;
+                    .actor_image{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .actor_name{
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 18px;
+                        display: flex;
+                        align-items: center;
+                        color: #ffffffb4;
+                    }
+                }
+            }
+
+
+            .slick-arrow {
+                position: absolute !important;
+                top: -15px !important;
+
+                &.slick-next {
+                    right: 0px !important;
+
+                    &:before {
+                        border-radius: 50%;
+                        color: #16151D;
+                        padding: 3px 2px 1px 2px;
+                        background-color: #D3465B;
+                    }
+                }
+
+                &.slick-prev {
+                    position: absolute !important;
+                    right: 100px !important;
+                    left: 90% !important;
+
+                    &:before {
+                        border-radius: 50%;
+                        color: #16151D;
+                        padding: 3px 2px 1px 2px;
+                        background-color: #D3465B;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slick-one{
+    .slick-wrapper{
+        .slick-title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 34px;
+            color: #FFFFFF;
+            padding-bottom: 24px;
+        }
+    }
+}
+
+
+.slider{
+    display: flex;
+}
+
+.slick-one{
+    position: relative;
+    .slick-arrow{
+            position: absolute !important;
+            top: -30px !important;
+            &.slick-next{
+                right: 25px !important;
+                &:before{
+                    border-radius: 50%;
+                    color: #16151D;
+                    padding: 5px;
+                    background-color: #D3465B;
+                }
+            }
+            &.slick-prev{
+                position: absolute !important;
+                left: 64rem !important;
+                &:before{
+                    border-radius: 50%;
+                    color: #16151D;
+                    padding: 5px;
+                    background-color: #D3465B;
+                }
+            }
+        }   
+}
+
+
+footer{
+        background-color: #13121a;
+        padding: 24px 0;
+        box-sizing: border-box;
+}

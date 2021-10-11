@@ -1,0 +1,36 @@
+.news-movie{
+    .container{
+        .inner-page-info{
+            margin-top: 100px;
+
+            .page_name{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 34px;
+                display: flex;
+                color: #FFFFFF;
+            }
+
+            .movies-list{
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+        }
+
+        .pagination-wrapper{
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 30px 0;
+        }
+    }
+
+    .footer {
+        background-color: #13121a;
+        padding: 24px 0;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,70 @@
+.footer-inner{
+    .top{
+        margin-bottom: 24px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        .block-one{
+            .Logo{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 38px;
+                color: #FFFFFF;
+                font-weight: bold;
+            }
+        }
+        .block-two{
+            .navbar-link{
+                padding: 0 20px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                &:hover{
+                    color: #D3465B;
+                }
+            }
+        }
+        .block-three{
+            img{
+                padding-right: 24px;
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        .block-one{
+            h3{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(235, 235, 245, 0.3);
+            }
+        }
+
+        .block-two{
+            margin-left: 129px;
+            margin-right: 330px;
+            .faq{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                padding-right: 40px;
+                color: rgba(235, 235, 245, 0.3);
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+        .block-three{
+            .app{
+                margin-right: 24px;
+            }
+        }
+    }
+}
